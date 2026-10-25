@@ -2,8 +2,7 @@
 
 A small program that decides whether a library loan is **APPROVED / WAITLISTED / REJECTED** and
 suggests alternatives, using PostgreSQL, MongoDB, Redis, Neo4j and a vector store (built twice:
-pgvector and Qdrant). Start with [PLAN.md](PLAN.md) (the idea), then [NOTES.md](NOTES.md)
-(explanations for the defence), then [report/REPORT.md](report/REPORT.md) (results).
+pgvector and Qdrant). Start with [PLAN.md](PLAN.md) (the idea), then [report/REPORT.md](report/REPORT.md) (results).
 
 ## Run it (Windows, Docker Desktop, Python 3.13)
 

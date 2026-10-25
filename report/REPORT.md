@@ -8,7 +8,8 @@ personal data and Open Library has no stock or age policy. Details: `data/README
 
 ## 1. What the program decides
 For a loan request (member, book) it returns **APPROVED / WAITLISTED / REJECTED** with a reason code, then
-suggests alternatives. Rules are listed in `NOTES.md` §1.
+suggests alternatives. The first rule that fails decides: member exists, book exists, member active, fines ≤ 5.00 €, fewer than 3 active
+loans, not already holding the book, age ≥ the book's `min_age` (from MongoDB), then a copy is available (APPROVED) or not (WAITLISTED).
 
 ## 2. Role of each store
 
@@ -101,10 +102,9 @@ the filter: 10 rows, recall 1.00, about 1 ms. Qdrant handles this with a payload
 HNSW traversal: 10 rows, recall 1.00 out of the box.
 
 **Related honest findings:** (1) my first benchmark run showed perfect pgvector filtered results, caused by a cached prepared-statement
-plan from the exact-search phase (`NOTES.md` §6); (2) my first Open Library download gave wrong genres because of noisy tags, so I
-rejected it and added a keyword check (`NOTES.md` §4). The numbers above come from the corrected code and data.
+plan from the exact-search phase; (2) my first Open Library download gave wrong genres because of noisy tags, so I
+rejected it and added a keyword check (see `data/README.md`). The numbers above come from the corrected code and data.
 
 ## 7. Limits of this study
 420 vectors is small (unfiltered ANN recall 1.0 is expected); genre labels are noisy crowd-sourced tags; members and loans are synthetic;
 latencies include client and transport overhead on one machine; fastembed's ONNX build of all-MiniLM-L6-v2 was used.
-Full list: `NOTES.md` §8.

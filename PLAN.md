@@ -39,7 +39,7 @@ Qdrant only hold *derived* copies** (each remembers the source id and when it wa
 ## What "done" means (checklist from the assignment)
 
 - [x] one `docker compose up` for 5 stores, pinned versions
-- [x] 200–1000 records per store, source noted (see NOTES.md for the honest exceptions)
+- [x] 200–1000 records per store, source noted (see data/README.md for what is real and what is synthetic)
 - [x] PostgreSQL transaction + constraint; MongoDB `$jsonSchema` rejection; Redis cache-aside + stale demo
 - [x] Neo4j queries; pgvector **and** Qdrant with the same vectors
 - [x] ANN recall@10, shared ids, 5 % filter results/recall/latency, ef_search / iterative scan / hnsw_ef recorded
