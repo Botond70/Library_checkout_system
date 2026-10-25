@@ -26,7 +26,7 @@ Qdrant only hold *derived* copies** (each remembers the source id and when it wa
 ## Steps (and where each one lives)
 
 1. `docker-compose.yml` – one command starts all five servers, versions pinned.
-2. `bookloan/datagen.py` – generate 420 books, 312 members, 920 loans (synthetic, seed 42).
+2. `bookloan/datagen.py` – generate 420 books, 314 members, 920 loans (synthetic, seed 42).
 3. `tests/*.json` – test cases and labels, **written before** the decision code and before any tuning.
 4. `sql/schema.sql`, `bookloan/mongo_schema.py`, `bookloan/load_all.py` – schemas and loaders.
 5. `bookloan/decision.py` – the rules, the transaction, the Redis cache.
