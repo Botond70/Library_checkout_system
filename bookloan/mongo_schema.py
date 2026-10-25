@@ -1,18 +1,19 @@
 """MongoDB collection with a $jsonSchema validator.
 
-One collection, three formats: every book needs the common fields, and then the fields of its
-own format (novel -> pages + isbn, audiobook -> duration + narrator, graphic_novel -> artist +
-issue number). validationAction "error" means an invalid insert is REJECTED, not just logged.
+One collection, two kinds of book: every book needs the common fields; then a FICTION book must also
+list the people (characters) it is about, and a NONFICTION book the places it is about. These are the
+real Open Library fields `subject_people` / `subject_places`. validationAction "error" means an
+invalid insert is REJECTED, not just logged.
 """
 
-COMMON = ["_id", "title", "author", "genre", "format", "min_age", "description", "updated_at"]
+COMMON = ["_id", "ol_key", "title", "author", "genre", "kind", "min_age", "description", "updated_at"]
 
 
-def _variant(fmt, extra_required, extra_props):
+def _variant(kind, extra_required, extra_props):
     return {
         "bsonType": "object",
         "required": extra_required,
-        "properties": {"format": {"enum": [fmt]}, **extra_props},
+        "properties": {"kind": {"enum": [kind]}, **extra_props},
     }
 
 
@@ -21,18 +22,16 @@ VALIDATOR = {"$jsonSchema": {
     "required": COMMON,
     "properties": {
         "_id": {"bsonType": "string"},
+        "ol_key": {"bsonType": "string"},
         "title": {"bsonType": "string", "minLength": 1},
         "min_age": {"bsonType": "int", "minimum": 0, "maximum": 18},
-        "format": {"enum": ["novel", "audiobook", "graphic_novel"]},
+        "kind": {"enum": ["fiction", "nonfiction"]},
         "description": {"bsonType": "string", "minLength": 10},
+        "pages": {"bsonType": ["int", "double"], "minimum": 1},
     },
     "oneOf": [
-        _variant("novel", ["pages", "isbn"],
-                 {"pages": {"bsonType": "int", "minimum": 1}, "isbn": {"bsonType": "string"}}),
-        _variant("audiobook", ["duration_minutes", "narrator"],
-                 {"duration_minutes": {"bsonType": "int", "minimum": 1}, "narrator": {"bsonType": "string"}}),
-        _variant("graphic_novel", ["artist", "issue_number"],
-                 {"artist": {"bsonType": "string"}, "issue_number": {"bsonType": "int"}}),
+        _variant("fiction", ["subject_people"], {"subject_people": {"bsonType": "array"}}),
+        _variant("nonfiction", ["subject_places"], {"subject_places": {"bsonType": "array"}}),
     ],
 }}
 

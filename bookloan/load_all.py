@@ -50,9 +50,9 @@ def load_neo4j(books, loans):
                  MERGE (b:Book {book_id: r._id}) SET b.title = r.title, b.refreshed_at = $now
                  MERGE (a:Author {name: r.author})
                  MERGE (b)-[:WRITTEN_BY]->(a)
-                 FOREACH (_ IN CASE WHEN r.series IS NULL THEN [] ELSE [1] END |
-                     MERGE (s:Series {name: r.series})
-                     MERGE (b)-[:IN_SERIES {position: r.series_position}]->(s))""",
+                 FOREACH (subj IN r.subjects[0..3] |
+                     MERGE (s:Subject {name: toLower(subj)})
+                     MERGE (b)-[:HAS_SUBJECT]->(s))""",
               rows=books, now=now)
         rows = [{"m": l["member_id"], "b": l["book_id"]} for l in loans]
         s.run("""UNWIND $rows AS r

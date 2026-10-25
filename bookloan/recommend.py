@@ -1,6 +1,6 @@
 """Alternatives for a waitlisted / rejected request. Uses the graph store and the vector stores.
 
-Graph (Neo4j)   : "structural" neighbours -- same series, same author, what other readers also borrowed
+Graph (Neo4j)   : "structural" neighbours -- same author, shared subjects, what other readers also borrowed
 Vectors         : "semantic" neighbours   -- books whose description is similar
 Both only return book ids; PostgreSQL then says which of them can be borrowed right now.
 """
@@ -12,7 +12,7 @@ from qdrant_client import models as qm
 
 
 def graph_alternatives(book_id, limit=5):
-    """Other books by the same author or in the same series, plus 'readers also borrowed'."""
+    """Other books by the same author, books sharing the most subjects, plus 'readers also borrowed'."""
     with neo().session() as s:
         same_author = s.run("""MATCH (:Book {book_id:$id})-[:WRITTEN_BY]->(a)<-[:WRITTEN_BY]-(o:Book)
                                WHERE o.book_id <> $id RETURN o.book_id AS id LIMIT $n""", id=book_id, n=limit)
@@ -23,6 +23,15 @@ def graph_alternatives(book_id, limit=5):
                         ORDER BY readers DESC, id LIMIT $n""", id=book_id, n=limit)
         b = [(r["id"], r["readers"]) for r in also]
     return a, b
+
+
+def graph_shared_subjects(book_id, limit=5):
+    """Books that share the most (real Open Library) subjects with this one: (book_id, shared_subjects)."""
+    with neo().session() as s:
+        rows = s.run("""MATCH (:Book {book_id:$id})-[:HAS_SUBJECT]->(x)<-[:HAS_SUBJECT]-(o:Book)
+                        WHERE o.book_id <> $id
+                        RETURN o.book_id AS id, count(x) AS shared ORDER BY shared DESC, id LIMIT $n""", id=book_id, n=limit)
+        return [(r["id"], r["shared"]) for r in rows]
 
 
 def similar_pgvector_joined(description_vec, genre=None, limit=5):

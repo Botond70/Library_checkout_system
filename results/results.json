@@ -6,9 +6,10 @@
   },
   "2_mongo_validation": {
     "results": {
-      "novel without pages": "rejected, error code 121 (DocumentValidationFailed)",
-      "audiobook without narrator": "rejected, error code 121 (DocumentValidationFailed)",
-      "graphic_novel with novel fields only": "rejected, error code 121 (DocumentValidationFailed)"
+      "fiction without subject_people": "rejected, error code 121 (DocumentValidationFailed)",
+      "nonfiction without subject_places": "rejected, error code 121 (DocumentValidationFailed)",
+      "unknown kind": "rejected, error code 121 (DocumentValidationFailed)",
+      "missing title": "rejected, error code 121 (DocumentValidationFailed)"
     },
     "documents_before": 420,
     "documents_after": 420
@@ -37,37 +38,58 @@
   "4_neo4j_graph": {
     "nodes": {
       "Book": 420,
-      "Author": 84,
-      "Series": 42,
-      "Member": 290
+      "Author": 332,
+      "Subject": 808,
+      "Member": 289
     },
     "relationships": {
-      "BORROWED": 919,
       "WRITTEN_BY": 420,
-      "IN_SERIES": 210
+      "HAS_SUBJECT": 1259,
+      "BORROWED": 915
     },
     "waitlisted_book": "B0002",
     "same_author_ids": [
-      "B0005",
-      "B0003",
-      "B0001",
+      "B0012",
+      "B0010",
       "B0004"
+    ],
+    "share_most_subjects": [
+      [
+        "B0012",
+        1
+      ],
+      [
+        "B0098",
+        1
+      ],
+      [
+        "B0170",
+        1
+      ],
+      [
+        "B0173",
+        1
+      ],
+      [
+        "B0175",
+        1
+      ]
     ],
     "readers_also_borrowed": [
       [
-        "B0005",
+        "B0025",
         1
       ],
       [
-        "B0014",
+        "B0032",
         1
       ],
       [
-        "B0036",
+        "B0041",
         1
       ],
       [
-        "B0050",
+        "B0067",
         1
       ],
       [
@@ -76,12 +98,11 @@
       ]
     ],
     "of_these_available_now (PostgreSQL)": [
-      "B0001",
-      "B0003",
       "B0004",
-      "B0005",
-      "B0036",
-      "B0050",
+      "B0025",
+      "B0032",
+      "B0041",
+      "B0067",
       "B0091"
     ]
   },
@@ -102,12 +123,12 @@
     "without_lock": {
       "results": {
         "9012": [
-          "APPROVED",
-          "OK"
-        ],
-        "9001": [
           "ERROR",
           "CheckViolation"
+        ],
+        "9001": [
+          "APPROVED",
+          "OK"
         ]
       },
       "copies_left": 0
@@ -125,7 +146,7 @@
       "rows": 420,
       "queries": 20,
       "pgvector plan (ANN, unfiltered)": "Limit  (cost=365.21..374.81 rows=10 width=14) | ->  Index Scan using book_emb_hnsw on book_embeddings  (cost=365.21..768.40 rows=420 width=14) | Order By: (embedding <=> <query vector>)",
-      "pgvector plan (ANN, filtered)": "Limit  (cost=365.21..566.83 rows=10 width=14) | ->  Index Scan using book_emb_hnsw on book_embeddings  (cost=365.21..768.45 rows=20 width=14) | Order By: (embedding <=> <query vector>) | Filter: (genre = 'cosy mystery'::text)"
+      "pgvector plan (ANN, filtered)": "Limit  (cost=365.21..566.83 rows=10 width=14) | ->  Index Scan using book_emb_hnsw on book_embeddings  (cost=365.21..768.45 rows=20 width=14) | Order By: (embedding <=> <query vector>) | Filter: (genre = 'detective fiction'::text)"
     },
     "A_ann_recall_at_10": {
       "pgvector": 1.0,
@@ -165,71 +186,71 @@
     },
     "C_labelled_quality": {
       "pgvector": {
-        "recall@5": 0.81,
-        "MRR": 0.8725
+        "recall@5": 0.58,
+        "MRR": 0.775
       },
       "qdrant": {
-        "recall@5": 0.81,
-        "MRR": 0.8725
+        "recall@5": 0.58,
+        "MRR": 0.775
       }
     },
     "latency_unfiltered_ms_median": {
-      "pgvector": 0.66,
-      "qdrant (REST)": 5.9,
-      "qdrant (gRPC)": 2.1
+      "pgvector": 0.73,
+      "qdrant (REST)": 7.55,
+      "qdrant (gRPC)": 1.95
     },
     "D_filter": {
       "rows_kept": "20 of 420 = 4.8%",
       "on_topic_filter": {
         "pgvector (ef_search=40, iterative_scan=off)": {
-          "results_returned_mean": 9.75,
-          "queries_with_fewer_than_10": 2,
-          "ANN_recall@10": 0.975,
-          "latency_ms_median": 0.78
+          "results_returned_mean": 9,
+          "queries_with_fewer_than_10": 8,
+          "ANN_recall@10": 0.9,
+          "latency_ms_median": 0.76
         },
         "pgvector (ef_search=40, iterative_scan=relaxed_order)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 0.77
+          "latency_ms_median": 0.8
         },
         "pgvector (ef_search=200, iterative_scan=off)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 0.99
+          "latency_ms_median": 0.96
         },
         "qdrant (hnsw_ef=64, payload index on genre)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 5.33
+          "latency_ms_median": 5.3
         }
       },
       "off_topic_filter": {
         "pgvector (ef_search=40, iterative_scan=off)": {
-          "results_returned_mean": 0.85,
+          "results_returned_mean": 1.65,
           "queries_with_fewer_than_10": 20,
-          "ANN_recall@10": 0.085,
-          "latency_ms_median": 0.77
+          "ANN_recall@10": 0.165,
+          "latency_ms_median": 0.79
         },
         "pgvector (ef_search=40, iterative_scan=relaxed_order)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 1.2
+          "latency_ms_median": 1.11
         },
         "pgvector (ef_search=200, iterative_scan=off)": {
-          "results_returned_mean": 7.65,
-          "queries_with_fewer_than_10": 12,
-          "ANN_recall@10": 0.765,
-          "latency_ms_median": 1.04
+          "results_returned_mean": 8.25,
+          "queries_with_fewer_than_10": 8,
+          "ANN_recall@10": 0.825,
+          "latency_ms_median": 1.06
         },
         "qdrant (hnsw_ef=64, payload index on genre)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 15.12
+          "latency_ms_median": 7.63
         }
       }
     },
@@ -237,66 +258,66 @@
       "question": "5 most similar books to 'easy recipes for bread, cakes and pastries at home' in genre 'cookery' that can be borrowed right now",
       "pgvector (1 SQL statement)": [
         [
-          "B0223",
-          "The Last Season",
-          1,
-          0.3099
-        ],
-        [
-          "B0224",
-          "The Northern Orchard",
-          4,
-          0.3401
-        ],
-        [
-          "B0226",
-          "The Midnight Tide",
+          "B0261",
+          "Joy of Cooking",
           3,
-          0.383
+          0.4923
         ],
         [
-          "B0221",
-          "The Winter Tide",
-          1,
-          0.4019
+          "B0272",
+          "On food and cooking",
+          2,
+          0.5804
         ],
         [
-          "B0227",
-          "The Sunken Harbour",
-          1,
-          0.4039
+          "B0274",
+          "How to Cook Everything",
+          2,
+          0.6247
+        ],
+        [
+          "B0265",
+          "Salt, Fat, Acid, Heat",
+          2,
+          0.6306
+        ],
+        [
+          "B0269",
+          "The art of fermentation",
+          4,
+          0.6415
         ]
       ],
       "qdrant + PostgreSQL (2 steps)": [
         [
-          "B0223",
-          "The Last Season",
-          1,
-          0.3099
-        ],
-        [
-          "B0224",
-          "The Northern Orchard",
-          4,
-          0.3401
-        ],
-        [
-          "B0226",
-          "The Midnight Tide",
+          "B0261",
+          "Joy of Cooking",
           3,
-          0.383
+          0.4923
         ],
         [
-          "B0221",
-          "The Winter Tide",
-          1,
-          0.4019
+          "B0272",
+          "On food and cooking",
+          2,
+          0.5804
         ],
         [
-          "B0227",
-          "The Sunken Harbour",
-          1,
-          0.4039
+          "B0274",
+          "How to Cook Everything",
+          2,
+          0.6247
+        ],
+        [
+          "B0265",
+          "Salt, Fat, Acid, Heat",
+          2,
+          0.6306
+        ],
+        [
+          "B0269",
+          "The art of fermentation",
+          4,
+          0.6415
         ]
       ],
       "same_ids": true
@@ -310,11 +331,11 @@
       ],
       "stale_books": []
     },
-    "mongo_old_author": "Anna Perrin",
+    "mongo_old_author": "Arthur Conan Doyle",
     "after_mongo_update_BEFORE_refresh": {
       "redis_says": "APPROVED(cache)",
       "real_decision": "REJECTED/AGE_RESTRICTED",
-      "graph_author": "Anna Perrin",
+      "graph_author": "Arthur Conan Doyle",
       "rank_of_book_for_NEW_description (pgvector, qdrant)": [
         null,
         null

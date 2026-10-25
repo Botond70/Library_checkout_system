@@ -15,9 +15,9 @@ minute, and every one of the five database types has a natural job.
 | Store | Holds | Why *here* |
 |---|---|---|
 | **PostgreSQL** | members, books (stock), loans, loan requests, decisions | Lending needs transactions, foreign keys and `CHECK` constraints: stock must never go negative, two people must not get the last copy. |
-| **MongoDB** | the book catalogue record (description, age rating, format-specific fields) | A novel, an audiobook and a graphic novel have *different fields*; a document with a `$jsonSchema` per format fits better than a table with many empty columns. |
+| **MongoDB** | the book catalogue record (description, age rating, subjects, fiction/nonfiction-specific fields) | Real catalogue records are irregular: fiction lists the *characters* it is about, nonfiction the *places*; pages / ISBN / year are often missing. A validated document fits better than a table full of empty columns. |
 | **Redis** | cached decisions `loan:{member}:{book}:decision` with a 5-minute TTL | The same question is asked again and again; a key-value lookup is much faster than re-running the rules, and old entries should expire by themselves. |
-| **Neo4j** | Book → Author, Book → Series, Member → Book ("borrowed") | "Same author", "same series", "readers who also borrowed" are relationship walks, which are one short query in a graph and several joins in SQL. |
+| **Neo4j** | Book → Author, Book → Subject, Member → Book ("borrowed") | "Same author", "shares subjects", "readers who also borrowed" are relationship walks, which are one short query in a graph and several joins in SQL. |
 | **pgvector** + **Qdrant** | embeddings of book descriptions, genre as metadata | "Books *like* this one" is a similarity question, not an exact match. Built twice on purpose, so the two can be compared. |
 
 Rule of the setup: **PostgreSQL and MongoDB are the sources of truth. Redis, Neo4j, pgvector and
@@ -26,7 +26,7 @@ Qdrant only hold *derived* copies** (each remembers the source id and when it wa
 ## Steps (and where each one lives)
 
 1. `docker-compose.yml` – one command starts all five servers, versions pinned.
-2. `bookloan/datagen.py` – generate 420 books, 314 members, 920 loans (synthetic, seed 42).
+2. `bookloan/fetch_openlibrary.py` – download **420 real books** from Open Library; `bookloan/datagen.py` – add the synthetic parts (members, loans, stock, age policy).
 3. `tests/*.json` – test cases and labels, **written before** the decision code and before any tuning.
 4. `sql/schema.sql`, `bookloan/mongo_schema.py`, `bookloan/load_all.py` – schemas and loaders.
 5. `bookloan/decision.py` – the rules, the transaction, the Redis cache.

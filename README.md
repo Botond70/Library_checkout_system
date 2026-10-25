@@ -11,7 +11,9 @@ pgvector and Qdrant). Start with [PLAN.md](PLAN.md) (the idea), then [NOTES.md](
 docker compose up -d                       # 1. start the 5 databases (wait ~20 s)
 py -m venv .venv                           # 2. one-time Python setup
 .venv/Scripts/python -m pip install -r requirements.txt
-.venv/Scripts/python -m bookloan.datagen   # 3. (optional) regenerate data/*.json - already committed
+# 3. (optional) data is already committed. To rebuild it:
+.venv/Scripts/python -m bookloan.fetch_openlibrary   # downloads the real books (~15 min, needs internet)
+.venv/Scripts/python -m bookloan.datagen             # adds synthetic members/loans/stock
 .venv/Scripts/python -m bookloan.run_all   # 4. load everything, run every test + measurement
 ```
 
@@ -24,8 +26,10 @@ embedding model (~90 MB). Ports used: PostgreSQL 5433, MongoDB 27017, Redis 6379
 |---|---|
 | `docker-compose.yml` | the five servers, pinned image versions |
 | `sql/schema.sql` | PostgreSQL tables, constraints, `book_embeddings` (pgvector) |
-| `bookloan/datagen.py` | synthetic data generator (seed 42) → `data/` |
-| `bookloan/mongo_schema.py` | MongoDB `$jsonSchema` validator |
+| `bookloan/fetch_openlibrary.py` | downloads the real catalogue from Open Library → `data/openlibrary_books.json` |
+| `bookloan/datagen.py` | builds `data/*.json`; adds the synthetic members, loans, stock (seed 42) |
+| `data/README.md` | **which data is real and which is synthetic** |
+| `bookloan/mongo_schema.py` | MongoDB `$jsonSchema` validator (fiction vs nonfiction) |
 | `bookloan/load_all.py` | loads all five stores |
 | `bookloan/decision.py` | **the decision**: rules, transaction, Redis cache |
 | `bookloan/recommend.py` | alternatives from the graph and from vectors |

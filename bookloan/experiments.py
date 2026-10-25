@@ -51,14 +51,15 @@ def concurrency():
 
 
 def mongo_validation():
-    """Inserting a book without a field required for its format must fail."""
+    """Inserting a book without a field required for its kind must fail."""
     db = mongo()
     before = db.books.count_documents({})
-    base = {"title": "Bad", "author": "A B", "genre": "poetry", "min_age": 0, "description": "A valid long description.",
-            "updated_at": "2026-01-01T00:00:00Z"}
-    bad = [("novel without pages", {**base, "_id": "BAD1", "format": "novel", "isbn": "978-1"}),
-           ("audiobook without narrator", {**base, "_id": "BAD2", "format": "audiobook", "duration_minutes": 100}),
-           ("graphic_novel with novel fields only", {**base, "_id": "BAD3", "format": "graphic_novel", "pages": 10, "isbn": "x"})]
+    base = {"ol_key": "/works/OL0W", "title": "Bad", "author": "A B", "genre": "poetry", "min_age": 0,
+            "description": "A valid long description.", "updated_at": "2026-01-01T00:00:00Z"}
+    bad = [("fiction without subject_people", {**base, "_id": "BAD1", "kind": "fiction", "subject_places": []}),
+           ("nonfiction without subject_places", {**base, "_id": "BAD2", "kind": "nonfiction", "subject_people": []}),
+           ("unknown kind", {**base, "_id": "BAD3", "kind": "audiobook"}),
+           ("missing title", {k: v for k, v in {**base, "_id": "BAD4", "kind": "fiction", "subject_people": []}.items() if k != "title"})]
     res = {}
     for name, doc in bad:
         try:
@@ -66,7 +67,7 @@ def mongo_validation():
             res[name] = "INSERTED (validation did not fire!)"
         except pymongo.errors.WriteError as e:
             res[name] = f"rejected, error code {e.code} (DocumentValidationFailed)"
-    good = {**base, "_id": "GOOD1", "format": "novel", "pages": 10, "isbn": "978-1"}
+    good = {**base, "_id": "GOOD1", "kind": "fiction", "subject_people": []}
     db.books.insert_one(good)
     db.books.delete_one({"_id": "GOOD1"})
     return {"results": res, "documents_before": before, "documents_after": db.books.count_documents({})}
@@ -114,6 +115,7 @@ def graph():
                              (same_author + [i for i, _ in also],)).fetchall()
     out["waitlisted_book"] = "B0002"
     out["same_author_ids"] = same_author
+    out["share_most_subjects"] = recommend.graph_shared_subjects("B0002")
     out["readers_also_borrowed"] = also
     out["of_these_available_now (PostgreSQL)"] = [b for b, c in avail if c > 0]
     return out

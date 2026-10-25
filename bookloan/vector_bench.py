@@ -4,7 +4,7 @@ distance, same text ids, the same 20 fixed queries (tests/vector_queries.json).
 Measured (all numbers are returned in a dict and printed by run_all.py):
   A  ANN recall@10      HNSW top-10 versus the system's OWN exact top-10  (shared ids / 10)
   B  shared ids         how many of the 10 ids pgvector and Qdrant agree on
-  C  labelled quality   recall@5 and MRR against the topic labels
+  C  labelled quality   recall@5 and MRR against the genre labels
   D  ~5% filter         results returned, ANN recall@10 and latency, with a genre filter (20 of 420 rows = 4.8%)
   E  joined query       the same business question answered in one SQL statement vs two steps
 """
@@ -91,7 +91,7 @@ def overlap(a, b, k=K):
 def run():
     spec = json.loads((config.ROOT / "tests" / "vector_queries.json").read_text(encoding="utf-8"))["queries"]
     qvecs = embed([q["text"] for q in spec])
-    topic_of = {d["_id"]: d["topic"] for d in mongo().books.find({}, {"topic": 1})}
+    topic_of = {d["_id"]: d["genre"] for d in mongo().books.find({}, {"genre": 1})}
     pg, qd = PG(), QD()
     out = {}
 
@@ -137,7 +137,7 @@ def run():
     def quality(results):
         rec, rr = [], []
         for q, ids in zip(spec, results):
-            rel = [topic_of[i] == q["topic"] for i in ids]
+            rel = [topic_of[i] == q["genre"] for i in ids]
             rec.append(sum(rel[:5]) / 5)
             rr.append(next((1 / (n + 1) for n, ok in enumerate(rel) if ok), 0))
         return {"recall@5": round(statistics.mean(rec), 4), "MRR": round(statistics.mean(rr), 4)}
