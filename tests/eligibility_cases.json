@@ -1,5 +1,5 @@
 {
-  "_note": "Written BEFORE the decision code. Fixture members/books are created in bookloan/datagen.py. Reference year 2026. Rules, in order: member exists, book exists, member active, fines <= 5.00, active loans < 3, not already holding the book, age >= book min_age, copy available (APPROVED) else WAITLISTED.",
+  "_note": "Written BEFORE the decision code. Fixture members/books are created in bookloan/datagen.py. Reference year 2026. Rules, in order: member exists, book exists, member active, fines <= 5.00, active loans < 3, not already holding the book, age in whole years (reference date 2026-06-01 minus full birth date) >= book min_age, copy available (APPROVED) else WAITLISTED.",
   "cases": [
     {"id": 1,  "member": 9001, "book": "B0004", "expect": "APPROVED",   "code": "OK",               "why": "normal adult, book with free copies"},
     {"id": 2,  "member": 9001, "book": "B0003", "expect": "APPROVED",   "code": "OK",               "why": "takes the very last copy"},
@@ -13,10 +13,12 @@
     {"id": 10, "member": 9007, "book": "B0004", "expect": "APPROVED",   "code": "OK",               "why": "boundary: 2 active loans, third is allowed"},
     {"id": 11, "member": 9008, "book": "B0005", "expect": "REJECTED",   "code": "ALREADY_BORROWED", "why": "holds this book right now"},
     {"id": 12, "member": 9001, "book": "B0001", "expect": "APPROVED",   "code": "OK",               "why": "adult may take the 18+ book"},
-    {"id": 13, "member": 9009, "book": "B0001", "expect": "APPROVED",   "code": "OK",               "why": "boundary: exactly 18 years old"},
+    {"id": 13, "member": 9009, "book": "B0001", "expect": "APPROVED",   "code": "OK",               "why": "boundary: turned 18 exactly today (reference date 2026-06-01)"},
     {"id": 14, "member": 9010, "book": "B0001", "expect": "REJECTED",   "code": "AGE_RESTRICTED",   "why": "boundary: 17 years old"},
     {"id": 15, "member": 99999, "book": "B0004", "expect": "REJECTED",  "code": "MEMBER_NOT_FOUND", "why": "unknown member"},
     {"id": 16, "member": 9001, "book": "B9999", "expect": "REJECTED",   "code": "BOOK_NOT_FOUND",   "why": "unknown book"},
-    {"id": 17, "member": 9011, "book": "B0004", "expect": "REJECTED",   "code": "SUSPENDED",        "why": "suspended AND fined: rule order says suspension is reported first"}
+    {"id": 17, "member": 9011, "book": "B0004", "expect": "REJECTED",   "code": "SUSPENDED",        "why": "suspended AND fined: rule order says suspension is reported first"},
+    {"id": 18, "member": 9013, "book": "B0001", "expect": "REJECTED",   "code": "AGE_RESTRICTED",   "why": "boundary by DATE: turns 18 tomorrow, so still 17 (a year-only check would wrongly allow it)"},
+    {"id": 19, "member": 9014, "book": "B0001", "expect": "APPROVED",   "code": "OK",               "why": "boundary by DATE: turned 18 yesterday"}
   ]
 }

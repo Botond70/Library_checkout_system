@@ -15,7 +15,7 @@ import json
 import random
 from datetime import date, timedelta
 
-from .config import DATA_DIR, REFERENCE_YEAR
+from .config import DATA_DIR, REFERENCE_DATE
 
 random.seed(42)
 
@@ -288,33 +288,40 @@ def apply_fixture_books(books):
     return {"B0001": 3, "B0002": 1, "B0003": 1, "B0004": 3, "B0005": 2}
 
 
+def years_ago(n):
+    """Birth date of someone who turns n years old exactly on REFERENCE_DATE."""
+    return REFERENCE_DATE.replace(year=REFERENCE_DATE.year - n)
+
+
 def make_members():
     members = []
     for i in range(1, 301):
         members.append({
             "member_id": i,
             "name": f"{random.choice(FIRST_NAMES_M)} {random.choice(LAST)}",
-            "birth_year": random.randint(1950, 2016),
+            "birth_date": (REFERENCE_DATE - timedelta(days=random.randint(6 * 365, 76 * 365))).isoformat(),
             "status": "suspended" if random.random() < 0.04 else "active",
             "fines_eur": random.choice([0, 0, 0, 0, 0, 0, 1.5, 2.0, 3.5, 7.0, 12.5]),
         })
-    # Fixture members (used by tests/eligibility_cases.json). Born years are relative to REFERENCE_YEAR.
+    # Fixture members (used by tests/eligibility_cases.json). Birth dates are relative to REFERENCE_DATE.
     fx = [
-        (9001, "Fixture Adult",       REFERENCE_YEAR - 35, "active",    0.00),
-        (9002, "Fixture Child",       REFERENCE_YEAR - 10, "active",    0.00),
-        (9003, "Fixture Suspended",   REFERENCE_YEAR - 40, "suspended", 0.00),
-        (9004, "Fixture Fined",       REFERENCE_YEAR - 40, "active",    12.50),
-        (9005, "Fixture FineLimit",   REFERENCE_YEAR - 40, "active",    5.00),   # boundary: exactly the limit
-        (9006, "Fixture MaxLoans",    REFERENCE_YEAR - 40, "active",    0.00),   # 3 active loans
-        (9007, "Fixture TwoLoans",    REFERENCE_YEAR - 40, "active",    0.00),   # 2 active loans
-        (9008, "Fixture HasBook",     REFERENCE_YEAR - 40, "active",    0.00),   # already holds B0005
-        (9009, "Fixture Age18",       REFERENCE_YEAR - 18, "active",    0.00),   # boundary: exactly 18
-        (9010, "Fixture Age17",       REFERENCE_YEAR - 17, "active",    0.00),
-        (9011, "Fixture SuspFined",   REFERENCE_YEAR - 40, "suspended", 9.00),
-        (9012, "Fixture Racer",       REFERENCE_YEAR - 30, "active",    0.00),   # second user for the last-copy race
+        (9001, "Fixture Adult",       years_ago(35), "active",    0.00),
+        (9002, "Fixture Child",       years_ago(10), "active",    0.00),
+        (9003, "Fixture Suspended",   years_ago(40), "suspended", 0.00),
+        (9004, "Fixture Fined",       years_ago(40), "active",    12.50),
+        (9005, "Fixture FineLimit",   years_ago(40), "active",    5.00),   # boundary: exactly the limit
+        (9006, "Fixture MaxLoans",    years_ago(40), "active",    0.00),   # 3 active loans
+        (9007, "Fixture TwoLoans",    years_ago(40), "active",    0.00),   # 2 active loans
+        (9008, "Fixture HasBook",     years_ago(40), "active",    0.00),   # already holds B0005
+        (9009, "Fixture Age18",       years_ago(18), "active",    0.00),   # boundary: turned 18 exactly today
+        (9010, "Fixture Age17",       years_ago(17), "active",    0.00),
+        (9011, "Fixture SuspFined",   years_ago(40), "suspended", 9.00),
+        (9013, "Fixture Turns18Tmrw", years_ago(18) + timedelta(days=1), "active", 0.00),   # 17 years, 364 days -> still 17
+        (9014, "Fixture Turned18Yday", years_ago(18) - timedelta(days=1), "active", 0.00),  # 18 since yesterday
+        (9012, "Fixture Racer",       years_ago(30), "active",    0.00),   # second user for the last-copy race
     ]
     for mid, name, by, st, fine in fx:
-        members.append({"member_id": mid, "name": name, "birth_year": by, "status": st, "fines_eur": fine})
+        members.append({"member_id": mid, "name": name, "birth_date": by.isoformat(), "status": st, "fines_eur": fine})
     return members
 
 
@@ -323,7 +330,7 @@ def make_loans(books, members, copies_total):
     loans, active_per_book, active_per_member = [], {}, {}
     ids = [b["_id"] for b in books]
     regular = [m["member_id"] for m in members if m["member_id"] < 9000]
-    today = date(REFERENCE_YEAR, 6, 1)
+    today = REFERENCE_DATE
 
     def add(mid, bid, start, returned):
         due = start + timedelta(days=21)

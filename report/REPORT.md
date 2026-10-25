@@ -1,7 +1,7 @@
 # Report: Library Loan Service on five database types
 
 All numbers below are printed by `python -m bookloan.run_all` and saved in `results/results.json`.
-Data is synthetic (seed 42): 420 books, 312 members, 920 loans.
+Data is synthetic (seed 42): 420 books, 314 members, 920 loans.
 
 ## 1. What the program decides
 For a loan request (member, book) it returns **APPROVED / WAITLISTED / REJECTED** with a reason code, then
@@ -11,7 +11,7 @@ suggests alternatives. Rules are listed in `NOTES.md` §1.
 
 | Store | Role | Records | One reason |
 |---|---|---|---|
-| PostgreSQL 16 | system of record: members, books/stock, loans, requests, decisions | 312 + 420 + 920 | transactions and constraints keep stock correct |
+| PostgreSQL 16 | system of record: members, books/stock, loans, requests, decisions | 314 + 420 + 920 | transactions and constraints keep stock correct |
 | MongoDB 7 | system of record: catalogue record per book | 420 | fields differ per format, validated by `$jsonSchema` |
 | Redis 7.4 | derived: cached decision `loan:{m}:{b}:decision`, TTL 300 s | on demand | repeated question, automatic expiry |
 | Neo4j 5.26 | derived: Book–Author–Series–Member | 835 nodes, 1,547 edges | relationship walks |
@@ -20,8 +20,8 @@ suggests alternatives. Rules are listed in `NOTES.md` §1.
 
 ## 3. Main queries and what was shown
 
-**Eligibility (PostgreSQL + MongoDB).** 17 labelled cases written before the code, including boundaries (fines exactly 5.00,
-age exactly 18, 2 vs 3 active loans): **17 / 17 passed**.
+**Eligibility (PostgreSQL + MongoDB).** 19 labelled cases written before the code, including boundaries (fines exactly 5.00,
+age by full DATE: turns 18 yesterday / today / tomorrow, 2 vs 3 active loans): **19 / 19 passed**. Age is the whole years between a fixed reference date (2026-06-01) and the birth date.
 
 **Transaction (PostgreSQL).** `request_loan` locks the book row (`SELECT … FOR UPDATE`), applies the rules, then inserts the
 request, decision, loan and decrements stock in one transaction. Two members asking for the last copy at the same moment:

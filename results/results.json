@@ -1,7 +1,7 @@
 {
   "1_eligibility_tests": {
-    "cases": 17,
-    "passed": 17,
+    "cases": 19,
+    "passed": 19,
     "failures": []
   },
   "2_mongo_validation": {
@@ -39,19 +39,19 @@
       "Book": 420,
       "Author": 84,
       "Series": 42,
-      "Member": 289
+      "Member": 290
     },
     "relationships": {
+      "BORROWED": 919,
       "WRITTEN_BY": 420,
-      "IN_SERIES": 210,
-      "BORROWED": 917
+      "IN_SERIES": 210
     },
     "waitlisted_book": "B0002",
     "same_author_ids": [
       "B0005",
-      "B0004",
       "B0003",
-      "B0001"
+      "B0001",
+      "B0004"
     ],
     "readers_also_borrowed": [
       [
@@ -102,12 +102,12 @@
     "without_lock": {
       "results": {
         "9012": [
-          "ERROR",
-          "CheckViolation"
-        ],
-        "9001": [
           "APPROVED",
           "OK"
+        ],
+        "9001": [
+          "ERROR",
+          "CheckViolation"
         ]
       },
       "copies_left": 0
@@ -174,9 +174,9 @@
       }
     },
     "latency_unfiltered_ms_median": {
-      "pgvector": 0.67,
-      "qdrant (REST)": 15.6,
-      "qdrant (gRPC)": 1.79
+      "pgvector": 0.66,
+      "qdrant (REST)": 5.9,
+      "qdrant (gRPC)": 2.1
     },
     "D_filter": {
       "rows_kept": "20 of 420 = 4.8%",
@@ -185,25 +185,25 @@
           "results_returned_mean": 9.75,
           "queries_with_fewer_than_10": 2,
           "ANN_recall@10": 0.975,
-          "latency_ms_median": 0.87
+          "latency_ms_median": 0.78
         },
         "pgvector (ef_search=40, iterative_scan=relaxed_order)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 0.7
+          "latency_ms_median": 0.77
         },
         "pgvector (ef_search=200, iterative_scan=off)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 1.01
+          "latency_ms_median": 0.99
         },
         "qdrant (hnsw_ef=64, payload index on genre)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 15.34
+          "latency_ms_median": 5.33
         }
       },
       "off_topic_filter": {
@@ -211,25 +211,25 @@
           "results_returned_mean": 0.85,
           "queries_with_fewer_than_10": 20,
           "ANN_recall@10": 0.085,
-          "latency_ms_median": 0.73
+          "latency_ms_median": 0.77
         },
         "pgvector (ef_search=40, iterative_scan=relaxed_order)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 1.08
+          "latency_ms_median": 1.2
         },
         "pgvector (ef_search=200, iterative_scan=off)": {
           "results_returned_mean": 7.65,
           "queries_with_fewer_than_10": 12,
           "ANN_recall@10": 0.765,
-          "latency_ms_median": 1.05
+          "latency_ms_median": 1.04
         },
         "qdrant (hnsw_ef=64, payload index on genre)": {
           "results_returned_mean": 10,
           "queries_with_fewer_than_10": 0,
           "ANN_recall@10": 1.0,
-          "latency_ms_median": 6.07
+          "latency_ms_median": 15.12
         }
       }
     },
@@ -251,7 +251,7 @@
         [
           "B0226",
           "The Midnight Tide",
-          2,
+          3,
           0.383
         ],
         [
@@ -283,7 +283,7 @@
         [
           "B0226",
           "The Midnight Tide",
-          2,
+          3,
           0.383
         ],
         [

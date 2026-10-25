@@ -9,7 +9,7 @@ Neo4j and the vector stores are used afterwards to suggest ALTERNATIVES (see rec
 
 Rule order (the first rule that fails decides; documented in tests/eligibility_cases.json):
   1 member exists  2 book exists  3 member active  4 fines <= 5.00  5 active loans < 3
-  6 not already holding this book  7 age >= book min_age  8 copy available? APPROVED : WAITLISTED
+  6 not already holding this book  7 age (whole years, from the full birth DATE) >= book min_age  8 copy available? APPROVED : WAITLISTED
 """
 import json
 import time
@@ -22,14 +22,16 @@ from .db import mongo, pg, rds
 def evaluate(conn, mdb, member_id, book_id, lock=False):
     """Apply the rules and return (outcome, reason_code).
     lock=True takes a row lock on the book (SELECT ... FOR UPDATE) -- used inside the real transaction."""
-    member = conn.execute("SELECT status, fines_eur, birth_year FROM members WHERE member_id=%s", (member_id,)).fetchone()
+    member = conn.execute("SELECT status, fines_eur, "
+                          "EXTRACT(YEAR FROM age(%s::date, birth_date))::int FROM members WHERE member_id=%s",
+                          (config.REFERENCE_DATE, member_id)).fetchone()
     if member is None:
         return "REJECTED", "MEMBER_NOT_FOUND"
     book = conn.execute("SELECT copies_available FROM books WHERE book_id=%s" + (" FOR UPDATE" if lock else ""),
                         (book_id,)).fetchone()
     if book is None:
         return "REJECTED", "BOOK_NOT_FOUND"
-    status, fines, birth_year = member
+    status, fines, age = member       # age = whole years between REFERENCE_DATE and birth_date
     if status != "active":
         return "REJECTED", "SUSPENDED"
     if float(fines) > config.FINE_LIMIT_EUR:
@@ -43,7 +45,7 @@ def evaluate(conn, mdb, member_id, book_id, lock=False):
         return "REJECTED", "ALREADY_BORROWED"
     doc = mdb.books.find_one({"_id": book_id}, {"min_age": 1})            # <- the MongoDB part of the decision
     min_age = doc["min_age"] if doc else 0
-    if config.REFERENCE_YEAR - birth_year < min_age:
+    if age < min_age:
         return "REJECTED", "AGE_RESTRICTED"
     if book[0] > 0:
         return "APPROVED", "OK"

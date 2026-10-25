@@ -1,4 +1,5 @@
 """Connection settings and shared constants. Everything else imports from here."""
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -16,7 +17,7 @@ QDRANT_URL = "http://localhost:6333"
 QDRANT_COLLECTION = "books"
 
 # --- business constants (the loan rules) ---
-REFERENCE_YEAR = 2026        # fixed "today" so ages (and test results) never change over time
+REFERENCE_DATE = date(2026, 6, 1)   # fixed "today": ages (and test results) never change over time
 MAX_ACTIVE_LOANS = 3         # a member may hold at most 3 books at once
 FINE_LIMIT_EUR = 5.00        # fines ABOVE this block new loans (exactly 5.00 is still fine)
 DECISION_TTL_SECONDS = 300   # how long a cached decision lives in Redis

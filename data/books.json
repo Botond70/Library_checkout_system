@@ -333,7 +333,7 @@
   "pages": 429,
   "isbn": "978-3075362821",
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0017",
@@ -585,7 +585,7 @@
   "pages": 361,
   "isbn": "978-8969097897",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0029",
@@ -669,7 +669,7 @@
   "pages": 146,
   "isbn": "978-1566090561",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0033",
@@ -942,7 +942,7 @@
   "pages": 151,
   "isbn": "978-9984030846",
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 4
  },
  {
   "_id": "B0046",
@@ -1194,7 +1194,7 @@
   "pages": 480,
   "isbn": "978-3178995337",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0058",
@@ -1257,7 +1257,7 @@
   "pages": 568,
   "isbn": "978-9551219870",
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0061",
@@ -1299,7 +1299,7 @@
   "duration_minutes": 792,
   "narrator": "Jonas Fischer",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0063",
@@ -1467,7 +1467,7 @@
   "duration_minutes": 500,
   "narrator": "Karoly Perrin",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0071",
@@ -1593,7 +1593,7 @@
   "pages": 631,
   "isbn": "978-9660523876",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0077",
@@ -1614,7 +1614,7 @@
   "pages": 481,
   "isbn": "978-2789144223",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0078",
@@ -2013,7 +2013,7 @@
   "duration_minutes": 708,
   "narrator": "Elena Brandt",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0097",
@@ -2055,7 +2055,7 @@
   "pages": 285,
   "isbn": "978-4046558332",
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0099",
@@ -2139,7 +2139,7 @@
   "pages": 535,
   "isbn": "978-6572436051",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0103",
@@ -2160,7 +2160,7 @@
   "pages": 468,
   "isbn": "978-3605585995",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0104",
@@ -2181,7 +2181,7 @@
   "pages": 499,
   "isbn": "978-5751023835",
   "copies_total": 4,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0105",
@@ -2496,7 +2496,7 @@
   "artist": "Tessa Keller",
   "issue_number": 5,
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 4
  },
  {
   "_id": "B0120",
@@ -2538,7 +2538,7 @@
   "pages": 414,
   "isbn": "978-5634396131",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 1
  },
  {
   "_id": "B0122",
@@ -2769,7 +2769,7 @@
   "duration_minutes": 457,
   "narrator": "Tessa Eklund",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0133",
@@ -2853,7 +2853,7 @@
   "pages": 234,
   "isbn": "978-3171050399",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0137",
@@ -3042,7 +3042,7 @@
   "pages": 169,
   "isbn": "978-5484962610",
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0146",
@@ -3210,7 +3210,7 @@
   "artist": "Nils Marlowe",
   "issue_number": 4,
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0154",
@@ -3231,7 +3231,7 @@
   "pages": 488,
   "isbn": "978-7430757004",
   "copies_total": 4,
-  "copies_available": 2
+  "copies_available": 4
  },
  {
   "_id": "B0155",
@@ -3420,7 +3420,7 @@
   "pages": 535,
   "isbn": "978-3994607170",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0164",
@@ -3441,7 +3441,7 @@
   "pages": 506,
   "isbn": "978-7668801906",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0165",
@@ -3483,7 +3483,7 @@
   "pages": 196,
   "isbn": "978-3826557688",
   "copies_total": 4,
-  "copies_available": 2
+  "copies_available": 4
  },
  {
   "_id": "B0167",
@@ -3861,7 +3861,7 @@
   "artist": "Vera Lombardi",
   "issue_number": 7,
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0185",
@@ -4113,7 +4113,7 @@
   "pages": 345,
   "isbn": "978-2254516608",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0197",
@@ -4134,7 +4134,7 @@
   "pages": 235,
   "isbn": "978-3459788151",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0198",
@@ -4176,7 +4176,7 @@
   "artist": "Walter Nagy",
   "issue_number": 12,
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0200",
@@ -4239,7 +4239,7 @@
   "duration_minutes": 255,
   "narrator": "Pavel Brandt",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0203",
@@ -4491,7 +4491,7 @@
   "duration_minutes": 573,
   "narrator": "Nils Lindqvist",
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0215",
@@ -4596,7 +4596,7 @@
   "artist": "Elena Varga",
   "issue_number": 10,
   "copies_total": 4,
-  "copies_available": 1
+  "copies_available": 3
  },
  {
   "_id": "B0220",
@@ -4743,7 +4743,7 @@
   "pages": 176,
   "isbn": "978-3434757387",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0227",
@@ -4848,7 +4848,7 @@
   "pages": 625,
   "isbn": "978-4332404822",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0232",
@@ -4995,7 +4995,7 @@
   "artist": "Felix Kovacs",
   "issue_number": 11,
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0239",
@@ -5016,7 +5016,7 @@
   "artist": "Ulrich Brandt",
   "issue_number": 2,
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0240",
@@ -5037,7 +5037,7 @@
   "pages": 298,
   "isbn": "978-2073108894",
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 4
  },
  {
   "_id": "B0241",
@@ -5373,7 +5373,7 @@
   "artist": "Zoltan Nagy",
   "issue_number": 10,
   "copies_total": 4,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0257",
@@ -5499,7 +5499,7 @@
   "pages": 614,
   "isbn": "978-4025824435",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0263",
@@ -5520,7 +5520,7 @@
   "pages": 330,
   "isbn": "978-5185009345",
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 4
  },
  {
   "_id": "B0264",
@@ -5541,7 +5541,7 @@
   "pages": 218,
   "isbn": "978-5508149905",
   "copies_total": 3,
-  "copies_available": 1
+  "copies_available": 3
  },
  {
   "_id": "B0265",
@@ -5667,7 +5667,7 @@
   "artist": "Clara Ashby",
   "issue_number": 10,
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0271",
@@ -5793,7 +5793,7 @@
   "duration_minutes": 817,
   "narrator": "Zoltan Moreau",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0277",
@@ -5856,7 +5856,7 @@
   "pages": 336,
   "isbn": "978-9831336766",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0280",
@@ -5940,7 +5940,7 @@
   "pages": 170,
   "isbn": "978-5144289583",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0284",
@@ -6066,7 +6066,7 @@
   "duration_minutes": 817,
   "narrator": "Iris Jansen",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0290",
@@ -6192,7 +6192,7 @@
   "pages": 588,
   "isbn": "978-5910110341",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0296",
@@ -6276,7 +6276,7 @@
   "pages": 225,
   "isbn": "978-7823288650",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0300",
@@ -6381,7 +6381,7 @@
   "pages": 223,
   "isbn": "978-5884080139",
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0305",
@@ -6570,7 +6570,7 @@
   "artist": "Iris Weaver",
   "issue_number": 8,
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0314",
@@ -6591,7 +6591,7 @@
   "pages": 349,
   "isbn": "978-5704029171",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0315",
@@ -6717,7 +6717,7 @@
   "duration_minutes": 492,
   "narrator": "Dora Okafor",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0321",
@@ -6864,7 +6864,7 @@
   "duration_minutes": 686,
   "narrator": "Nils Haddad",
   "copies_total": 4,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0328",
@@ -6969,7 +6969,7 @@
   "pages": 414,
   "isbn": "978-6933852220",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0333",
@@ -7242,7 +7242,7 @@
   "artist": "Yara Holm",
   "issue_number": 2,
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0346",
@@ -7494,7 +7494,7 @@
   "artist": "Bruno Nagy",
   "issue_number": 9,
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0358",
@@ -7578,7 +7578,7 @@
   "pages": 619,
   "isbn": "978-1995358283",
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0362",
@@ -7620,7 +7620,7 @@
   "pages": 507,
   "isbn": "978-4588312351",
   "copies_total": 4,
-  "copies_available": 4
+  "copies_available": 3
  },
  {
   "_id": "B0364",
@@ -7683,7 +7683,7 @@
   "artist": "Hugo Weaver",
   "issue_number": 11,
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0367",
@@ -7704,7 +7704,7 @@
   "pages": 284,
   "isbn": "978-3201784149",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0368",
@@ -7746,7 +7746,7 @@
   "duration_minutes": 306,
   "narrator": "Hanna Delgado",
   "copies_total": 4,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0370",
@@ -7767,7 +7767,7 @@
   "pages": 255,
   "isbn": "978-1466305100",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0371",
@@ -7872,7 +7872,7 @@
   "duration_minutes": 127,
   "narrator": "Imre Okafor",
   "copies_total": 3,
-  "copies_available": 1
+  "copies_available": 3
  },
  {
   "_id": "B0376",
@@ -7977,7 +7977,7 @@
   "pages": 125,
   "isbn": "978-4454740118",
   "copies_total": 3,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0381",
@@ -8082,7 +8082,7 @@
   "duration_minutes": 190,
   "narrator": "Felix Duran",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0386",
@@ -8166,7 +8166,7 @@
   "pages": 215,
   "isbn": "978-2468848245",
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 4
  },
  {
   "_id": "B0390",
@@ -8187,7 +8187,7 @@
   "pages": 314,
   "isbn": "978-1857561275",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0391",
@@ -8208,7 +8208,7 @@
   "pages": 229,
   "isbn": "978-9927036153",
   "copies_total": 4,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0392",
@@ -8229,7 +8229,7 @@
   "pages": 442,
   "isbn": "978-9026301048",
   "copies_total": 3,
-  "copies_available": 2
+  "copies_available": 3
  },
  {
   "_id": "B0393",
@@ -8271,7 +8271,7 @@
   "duration_minutes": 132,
   "narrator": "Nils Marlowe",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0395",
@@ -8313,7 +8313,7 @@
   "pages": 501,
   "isbn": "978-7015499403",
   "copies_total": 2,
-  "copies_available": 2
+  "copies_available": 1
  },
  {
   "_id": "B0397",
@@ -8397,7 +8397,7 @@
   "pages": 380,
   "isbn": "978-3705237613",
   "copies_total": 2,
-  "copies_available": 1
+  "copies_available": 2
  },
  {
   "_id": "B0401",
@@ -8586,7 +8586,7 @@
   "pages": 249,
   "isbn": "978-4601406440",
   "copies_total": 3,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0410",
@@ -8628,7 +8628,7 @@
   "duration_minutes": 771,
   "narrator": "Benedek Ashby",
   "copies_total": 4,
-  "copies_available": 3
+  "copies_available": 2
  },
  {
   "_id": "B0412",

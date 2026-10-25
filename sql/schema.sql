@@ -6,7 +6,7 @@ CREATE EXTENSION IF NOT EXISTS vector;
 CREATE TABLE members (
     member_id   INT PRIMARY KEY,
     name        TEXT NOT NULL,
-    birth_year  INT  NOT NULL,
+    birth_date  DATE NOT NULL,
     status      TEXT NOT NULL CHECK (status IN ('active', 'suspended')),
     fines_eur   NUMERIC(6,2) NOT NULL DEFAULT 0 CHECK (fines_eur >= 0)
 );

@@ -27,7 +27,7 @@ def load_postgres(books, members, loans):
     with pg() as conn:
         conn.execute((config.ROOT / "sql" / "schema.sql").read_text(encoding="utf-8"))
         with conn.cursor() as cur:
-            cur.executemany("INSERT INTO members VALUES (%(member_id)s,%(name)s,%(birth_year)s,%(status)s,%(fines_eur)s)", members)
+            cur.executemany("INSERT INTO members VALUES (%(member_id)s,%(name)s,%(birth_date)s,%(status)s,%(fines_eur)s)", members)
             cur.executemany("INSERT INTO books VALUES (%(_id)s,%(title)s,%(genre)s,%(copies_total)s,%(copies_available)s)", books)
             cur.executemany("INSERT INTO loans (member_id,book_id,loaned_at,due_at,returned_at) "
                             "VALUES (%(member_id)s,%(book_id)s,%(loaned_at)s,%(due_at)s,%(returned_at)s)", loans)
