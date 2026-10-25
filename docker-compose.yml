@@ -1,0 +1,32 @@
+# One command starts all five stores:  docker compose up -d
+# Image tags are pinned on purpose, so the results are reproducible.
+services:
+  postgres:            # relational store + pgvector extension
+    image: pgvector/pgvector:0.8.0-pg16
+    environment:
+      POSTGRES_USER: library
+      POSTGRES_PASSWORD: library
+      POSTGRES_DB: library
+    ports: ["5433:5432"]          # 5433 so it does not clash with a local PostgreSQL
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U library"]
+      interval: 3s
+      retries: 20
+
+  mongo:               # document store
+    image: mongo:7.0
+    ports: ["27017:27017"]
+
+  redis:               # key-value store (cache)
+    image: redis:7.4
+    ports: ["6379:6379"]
+
+  neo4j:               # graph store
+    image: neo4j:5.26-community
+    environment:
+      NEO4J_AUTH: neo4j/librarypass
+    ports: ["7474:7474", "7687:7687"]
+
+  qdrant:              # dedicated vector database
+    image: qdrant/qdrant:v1.12.4
+    ports: ["6333:6333", "6334:6334"]

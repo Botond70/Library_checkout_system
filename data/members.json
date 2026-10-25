@@ -1,0 +1,2186 @@
+[
+ {
+  "member_id": 1,
+  "name": "Ivo Tanaka",
+  "birth_year": 1978,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 2,
+  "name": "Gus Lindqvist",
+  "birth_year": 1972,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 3,
+  "name": "Uma Weaver",
+  "birth_year": 1991,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 4,
+  "name": "Noor Marlowe",
+  "birth_year": 1955,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 5,
+  "name": "Kai Marlowe",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 6,
+  "name": "Otto Moravec",
+  "birth_year": 1955,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 7,
+  "name": "Ravi Duran",
+  "birth_year": 2000,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 8,
+  "name": "Sam Marlowe",
+  "birth_year": 2016,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 9,
+  "name": "Gus Novak",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 10,
+  "name": "Jess Quarry",
+  "birth_year": 1971,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 11,
+  "name": "Ben Ivanov",
+  "birth_year": 2016,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 12,
+  "name": "Otto Lindqvist",
+  "birth_year": 2014,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 13,
+  "name": "Sam Brandt",
+  "birth_year": 2000,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 14,
+  "name": "Ava Kovacs",
+  "birth_year": 2008,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 15,
+  "name": "Otto Lindqvist",
+  "birth_year": 1982,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 16,
+  "name": "Fay Ivanov",
+  "birth_year": 1965,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 17,
+  "name": "Lena Lindqvist",
+  "birth_year": 1999,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 18,
+  "name": "Uma Kovacs",
+  "birth_year": 1998,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 19,
+  "name": "Fay Perrin",
+  "birth_year": 1992,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 20,
+  "name": "Eli Kovacs",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 21,
+  "name": "Noor Novak",
+  "birth_year": 1989,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 22,
+  "name": "Jess Gallo",
+  "birth_year": 1973,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 23,
+  "name": "Gus Varga",
+  "birth_year": 1982,
+  "status": "suspended",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 24,
+  "name": "Pia Duran",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 25,
+  "name": "Hana Haddad",
+  "birth_year": 2010,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 26,
+  "name": "Cal Farkas",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 27,
+  "name": "Ivo Farkas",
+  "birth_year": 1976,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 28,
+  "name": "Ben Gallo",
+  "birth_year": 1994,
+  "status": "suspended",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 29,
+  "name": "Tara Moravec",
+  "birth_year": 1988,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 30,
+  "name": "Ben Okafor",
+  "birth_year": 2003,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 31,
+  "name": "Jess Farkas",
+  "birth_year": 1972,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 32,
+  "name": "Lena Perrin",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 33,
+  "name": "Kai Ibsen",
+  "birth_year": 1998,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 34,
+  "name": "Sam Lindqvist",
+  "birth_year": 1987,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 35,
+  "name": "Ivo Fischer",
+  "birth_year": 2002,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 36,
+  "name": "Uma Moreau",
+  "birth_year": 1963,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 37,
+  "name": "Ravi Lindqvist",
+  "birth_year": 2011,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 38,
+  "name": "Jess Tanaka",
+  "birth_year": 1990,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 39,
+  "name": "Uma Ibsen",
+  "birth_year": 1966,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 40,
+  "name": "Ravi Jansen",
+  "birth_year": 2013,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 41,
+  "name": "Uma Petrov",
+  "birth_year": 1987,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 42,
+  "name": "Dana Varga",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 43,
+  "name": "Gus Lombardi",
+  "birth_year": 2003,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 44,
+  "name": "Lena Duran",
+  "birth_year": 1977,
+  "status": "suspended",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 45,
+  "name": "Jess Delgado",
+  "birth_year": 1958,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 46,
+  "name": "Sam Fischer",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 47,
+  "name": "Kai Marlowe",
+  "birth_year": 1953,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 48,
+  "name": "Kai Moravec",
+  "birth_year": 1993,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 49,
+  "name": "Pia Lombardi",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 50,
+  "name": "Eli Gallo",
+  "birth_year": 2008,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 51,
+  "name": "Kai Quarry",
+  "birth_year": 2002,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 52,
+  "name": "Ravi Novak",
+  "birth_year": 1990,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 53,
+  "name": "Gus Eklund",
+  "birth_year": 1992,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 54,
+  "name": "Cal Brandt",
+  "birth_year": 1985,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 55,
+  "name": "Max Gallo",
+  "birth_year": 1971,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 56,
+  "name": "Fay Farkas",
+  "birth_year": 1964,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 57,
+  "name": "Kai Ivanov",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 58,
+  "name": "Pia Ostrov",
+  "birth_year": 1980,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 59,
+  "name": "Gus Ashby",
+  "birth_year": 1988,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 60,
+  "name": "Ben Keller",
+  "birth_year": 1975,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 61,
+  "name": "Ravi Varga",
+  "birth_year": 2011,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 62,
+  "name": "Gus Fischer",
+  "birth_year": 2011,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 63,
+  "name": "Jess Keller",
+  "birth_year": 1991,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 64,
+  "name": "Ravi Holm",
+  "birth_year": 1966,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 65,
+  "name": "Otto Marlowe",
+  "birth_year": 2016,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 66,
+  "name": "Ben Holm",
+  "birth_year": 1961,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 67,
+  "name": "Dana Ashby",
+  "birth_year": 1989,
+  "status": "suspended",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 68,
+  "name": "Gus Fischer",
+  "birth_year": 1975,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 69,
+  "name": "Sam Fischer",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 70,
+  "name": "Eli Kovacs",
+  "birth_year": 1985,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 71,
+  "name": "Sam Ashby",
+  "birth_year": 1963,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 72,
+  "name": "Sam Fischer",
+  "birth_year": 1984,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 73,
+  "name": "Tara Petrov",
+  "birth_year": 1971,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 74,
+  "name": "Kai Duran",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 75,
+  "name": "Pia Ostrov",
+  "birth_year": 1956,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 76,
+  "name": "Cal Tanaka",
+  "birth_year": 2000,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 77,
+  "name": "Tara Gallo",
+  "birth_year": 2007,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 78,
+  "name": "Kai Moravec",
+  "birth_year": 1975,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 79,
+  "name": "Sam Lindqvist",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 80,
+  "name": "Otto Okafor",
+  "birth_year": 2008,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 81,
+  "name": "Otto Weaver",
+  "birth_year": 1979,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 82,
+  "name": "Uma Delgado",
+  "birth_year": 1996,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 83,
+  "name": "Kai Lombardi",
+  "birth_year": 1991,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 84,
+  "name": "Cal Weaver",
+  "birth_year": 1964,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 85,
+  "name": "Fay Novak",
+  "birth_year": 1994,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 86,
+  "name": "Ravi Okafor",
+  "birth_year": 2001,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 87,
+  "name": "Kai Duran",
+  "birth_year": 1959,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 88,
+  "name": "Otto Marlowe",
+  "birth_year": 2002,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 89,
+  "name": "Sam Kovacs",
+  "birth_year": 2011,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 90,
+  "name": "Gus Moravec",
+  "birth_year": 2005,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 91,
+  "name": "Tara Lombardi",
+  "birth_year": 1993,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 92,
+  "name": "Fay Holm",
+  "birth_year": 1959,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 93,
+  "name": "Pia Okafor",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 94,
+  "name": "Otto Kovacs",
+  "birth_year": 1989,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 95,
+  "name": "Uma Okafor",
+  "birth_year": 1998,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 96,
+  "name": "Ben Lindqvist",
+  "birth_year": 1977,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 97,
+  "name": "Ava Keller",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 98,
+  "name": "Sam Novak",
+  "birth_year": 1999,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 99,
+  "name": "Gus Haddad",
+  "birth_year": 1990,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 100,
+  "name": "Jess Perrin",
+  "birth_year": 2005,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 101,
+  "name": "Cal Eklund",
+  "birth_year": 1951,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 102,
+  "name": "Max Nagy",
+  "birth_year": 1966,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 103,
+  "name": "Lena Ostrov",
+  "birth_year": 1956,
+  "status": "suspended",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 104,
+  "name": "Lena Okafor",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 105,
+  "name": "Noor Ivanov",
+  "birth_year": 2000,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 106,
+  "name": "Max Marlowe",
+  "birth_year": 2005,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 107,
+  "name": "Fay Weaver",
+  "birth_year": 1967,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 108,
+  "name": "Lena Moravec",
+  "birth_year": 2003,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 109,
+  "name": "Eli Brandt",
+  "birth_year": 1951,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 110,
+  "name": "Eli Jansen",
+  "birth_year": 2012,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 111,
+  "name": "Cal Brandt",
+  "birth_year": 2003,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 112,
+  "name": "Noor Farkas",
+  "birth_year": 1973,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 113,
+  "name": "Sam Moravec",
+  "birth_year": 2007,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 114,
+  "name": "Fay Tanaka",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 115,
+  "name": "Ravi Delgado",
+  "birth_year": 2002,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 116,
+  "name": "Lena Moreau",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 117,
+  "name": "Dana Eklund",
+  "birth_year": 2011,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 118,
+  "name": "Eli Jansen",
+  "birth_year": 1985,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 119,
+  "name": "Ravi Ostrov",
+  "birth_year": 1961,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 120,
+  "name": "Cal Holm",
+  "birth_year": 1989,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 121,
+  "name": "Sam Keller",
+  "birth_year": 1951,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 122,
+  "name": "Pia Eklund",
+  "birth_year": 1992,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 123,
+  "name": "Jess Kovacs",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 124,
+  "name": "Jess Jansen",
+  "birth_year": 1983,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 125,
+  "name": "Tara Kovacs",
+  "birth_year": 1956,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 126,
+  "name": "Uma Varga",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 127,
+  "name": "Ravi Lindqvist",
+  "birth_year": 1985,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 128,
+  "name": "Ivo Delgado",
+  "birth_year": 1982,
+  "status": "suspended",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 129,
+  "name": "Uma Kovacs",
+  "birth_year": 1969,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 130,
+  "name": "Fay Delgado",
+  "birth_year": 1980,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 131,
+  "name": "Ben Fischer",
+  "birth_year": 1960,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 132,
+  "name": "Eli Moravec",
+  "birth_year": 2013,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 133,
+  "name": "Max Petrov",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 134,
+  "name": "Gus Eklund",
+  "birth_year": 1994,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 135,
+  "name": "Dana Moreau",
+  "birth_year": 1971,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 136,
+  "name": "Jess Weaver",
+  "birth_year": 1979,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 137,
+  "name": "Pia Delgado",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 138,
+  "name": "Ava Novak",
+  "birth_year": 2007,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 139,
+  "name": "Ravi Holm",
+  "birth_year": 1955,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 140,
+  "name": "Lena Nagy",
+  "birth_year": 2005,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 141,
+  "name": "Ivo Fischer",
+  "birth_year": 1984,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 142,
+  "name": "Ivo Gallo",
+  "birth_year": 2000,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 143,
+  "name": "Hana Jansen",
+  "birth_year": 1974,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 144,
+  "name": "Fay Fischer",
+  "birth_year": 1951,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 145,
+  "name": "Ava Tanaka",
+  "birth_year": 1962,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 146,
+  "name": "Otto Ibsen",
+  "birth_year": 1978,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 147,
+  "name": "Gus Moreau",
+  "birth_year": 1953,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 148,
+  "name": "Uma Holm",
+  "birth_year": 1977,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 149,
+  "name": "Dana Ivanov",
+  "birth_year": 1965,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 150,
+  "name": "Eli Marlowe",
+  "birth_year": 1973,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 151,
+  "name": "Ivo Novak",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 152,
+  "name": "Otto Perrin",
+  "birth_year": 1985,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 153,
+  "name": "Kai Delgado",
+  "birth_year": 1970,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 154,
+  "name": "Ben Marlowe",
+  "birth_year": 1999,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 155,
+  "name": "Ivo Moravec",
+  "birth_year": 1983,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 156,
+  "name": "Pia Perrin",
+  "birth_year": 1975,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 157,
+  "name": "Pia Okafor",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 158,
+  "name": "Gus Farkas",
+  "birth_year": 1963,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 159,
+  "name": "Dana Moreau",
+  "birth_year": 1959,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 160,
+  "name": "Otto Varga",
+  "birth_year": 2013,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 161,
+  "name": "Ava Perrin",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 162,
+  "name": "Eli Ivanov",
+  "birth_year": 1992,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 163,
+  "name": "Ava Ashby",
+  "birth_year": 2012,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 164,
+  "name": "Cal Duran",
+  "birth_year": 1978,
+  "status": "suspended",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 165,
+  "name": "Dana Eklund",
+  "birth_year": 1995,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 166,
+  "name": "Max Moreau",
+  "birth_year": 1961,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 167,
+  "name": "Cal Moravec",
+  "birth_year": 2008,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 168,
+  "name": "Gus Kovacs",
+  "birth_year": 1955,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 169,
+  "name": "Gus Novak",
+  "birth_year": 1999,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 170,
+  "name": "Lena Weaver",
+  "birth_year": 1960,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 171,
+  "name": "Gus Brandt",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 172,
+  "name": "Hana Weaver",
+  "birth_year": 1999,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 173,
+  "name": "Jess Weaver",
+  "birth_year": 2007,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 174,
+  "name": "Ben Fischer",
+  "birth_year": 1957,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 175,
+  "name": "Max Okafor",
+  "birth_year": 1977,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 176,
+  "name": "Ravi Quarry",
+  "birth_year": 1969,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 177,
+  "name": "Cal Moreau",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 178,
+  "name": "Pia Perrin",
+  "birth_year": 1955,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 179,
+  "name": "Eli Varga",
+  "birth_year": 1972,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 180,
+  "name": "Dana Quarry",
+  "birth_year": 1971,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 181,
+  "name": "Dana Okafor",
+  "birth_year": 2013,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 182,
+  "name": "Hana Lindqvist",
+  "birth_year": 1975,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 183,
+  "name": "Max Fischer",
+  "birth_year": 1965,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 184,
+  "name": "Sam Brandt",
+  "birth_year": 1991,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 185,
+  "name": "Ben Eklund",
+  "birth_year": 1972,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 186,
+  "name": "Ivo Brandt",
+  "birth_year": 2003,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 187,
+  "name": "Sam Kovacs",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 188,
+  "name": "Ben Brandt",
+  "birth_year": 1962,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 189,
+  "name": "Uma Marlowe",
+  "birth_year": 1970,
+  "status": "suspended",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 190,
+  "name": "Cal Varga",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 191,
+  "name": "Tara Ostrov",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 192,
+  "name": "Eli Haddad",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 193,
+  "name": "Otto Tanaka",
+  "birth_year": 1980,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 194,
+  "name": "Ben Farkas",
+  "birth_year": 1973,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 195,
+  "name": "Cal Gallo",
+  "birth_year": 1988,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 196,
+  "name": "Sam Petrov",
+  "birth_year": 1974,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 197,
+  "name": "Dana Farkas",
+  "birth_year": 1996,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 198,
+  "name": "Ravi Petrov",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 199,
+  "name": "Gus Delgado",
+  "birth_year": 1956,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 200,
+  "name": "Pia Weaver",
+  "birth_year": 1972,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 201,
+  "name": "Ben Gallo",
+  "birth_year": 1996,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 202,
+  "name": "Ivo Fischer",
+  "birth_year": 2008,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 203,
+  "name": "Sam Kovacs",
+  "birth_year": 1970,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 204,
+  "name": "Ravi Okafor",
+  "birth_year": 1959,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 205,
+  "name": "Tara Eklund",
+  "birth_year": 1991,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 206,
+  "name": "Kai Petrov",
+  "birth_year": 1964,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 207,
+  "name": "Hana Jansen",
+  "birth_year": 2002,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 208,
+  "name": "Hana Lindqvist",
+  "birth_year": 2010,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 209,
+  "name": "Noor Brandt",
+  "birth_year": 1977,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 210,
+  "name": "Fay Marlowe",
+  "birth_year": 1997,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 211,
+  "name": "Lena Delgado",
+  "birth_year": 1975,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 212,
+  "name": "Tara Moreau",
+  "birth_year": 1985,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 213,
+  "name": "Otto Tanaka",
+  "birth_year": 1971,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 214,
+  "name": "Jess Farkas",
+  "birth_year": 1970,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 215,
+  "name": "Uma Ostrov",
+  "birth_year": 1971,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 216,
+  "name": "Hana Lindqvist",
+  "birth_year": 2002,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 217,
+  "name": "Gus Eklund",
+  "birth_year": 2010,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 218,
+  "name": "Ava Jansen",
+  "birth_year": 2004,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 219,
+  "name": "Hana Fischer",
+  "birth_year": 2005,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 220,
+  "name": "Eli Perrin",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 221,
+  "name": "Ben Weaver",
+  "birth_year": 2014,
+  "status": "suspended",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 222,
+  "name": "Max Weaver",
+  "birth_year": 1962,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 223,
+  "name": "Cal Duran",
+  "birth_year": 1951,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 224,
+  "name": "Gus Brandt",
+  "birth_year": 1995,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 225,
+  "name": "Cal Varga",
+  "birth_year": 2011,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 226,
+  "name": "Otto Nagy",
+  "birth_year": 1953,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 227,
+  "name": "Eli Nagy",
+  "birth_year": 2001,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 228,
+  "name": "Otto Ivanov",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 229,
+  "name": "Max Ostrov",
+  "birth_year": 1992,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 230,
+  "name": "Noor Keller",
+  "birth_year": 1984,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 231,
+  "name": "Sam Eklund",
+  "birth_year": 1976,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 232,
+  "name": "Uma Ostrov",
+  "birth_year": 1992,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 233,
+  "name": "Ravi Perrin",
+  "birth_year": 1996,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 234,
+  "name": "Max Ibsen",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 235,
+  "name": "Lena Kovacs",
+  "birth_year": 1958,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 236,
+  "name": "Eli Fischer",
+  "birth_year": 1980,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 237,
+  "name": "Pia Jansen",
+  "birth_year": 1976,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 238,
+  "name": "Kai Ibsen",
+  "birth_year": 1984,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 239,
+  "name": "Ivo Moreau",
+  "birth_year": 1958,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 240,
+  "name": "Pia Ashby",
+  "birth_year": 1965,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 241,
+  "name": "Sam Ostrov",
+  "birth_year": 1987,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 242,
+  "name": "Cal Haddad",
+  "birth_year": 2008,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 243,
+  "name": "Fay Novak",
+  "birth_year": 1959,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 244,
+  "name": "Dana Ivanov",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 245,
+  "name": "Ravi Gallo",
+  "birth_year": 1952,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 246,
+  "name": "Sam Perrin",
+  "birth_year": 1966,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 247,
+  "name": "Otto Jansen",
+  "birth_year": 1952,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 248,
+  "name": "Ava Nagy",
+  "birth_year": 1979,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 249,
+  "name": "Kai Tanaka",
+  "birth_year": 1993,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 250,
+  "name": "Pia Eklund",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 251,
+  "name": "Eli Ostrov",
+  "birth_year": 1989,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 252,
+  "name": "Hana Weaver",
+  "birth_year": 1997,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 253,
+  "name": "Eli Ibsen",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 254,
+  "name": "Uma Perrin",
+  "birth_year": 1970,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 255,
+  "name": "Fay Kovacs",
+  "birth_year": 1969,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 256,
+  "name": "Ben Fischer",
+  "birth_year": 1966,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 257,
+  "name": "Fay Haddad",
+  "birth_year": 1954,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 258,
+  "name": "Eli Ibsen",
+  "birth_year": 2007,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 259,
+  "name": "Sam Novak",
+  "birth_year": 1965,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 260,
+  "name": "Pia Keller",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 261,
+  "name": "Eli Varga",
+  "birth_year": 2014,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 262,
+  "name": "Pia Ostrov",
+  "birth_year": 1987,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 263,
+  "name": "Eli Lombardi",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 264,
+  "name": "Pia Ostrov",
+  "birth_year": 1955,
+  "status": "active",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 265,
+  "name": "Dana Novak",
+  "birth_year": 1953,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 266,
+  "name": "Otto Ibsen",
+  "birth_year": 1961,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 267,
+  "name": "Gus Eklund",
+  "birth_year": 1978,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 268,
+  "name": "Gus Varga",
+  "birth_year": 1960,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 269,
+  "name": "Cal Ashby",
+  "birth_year": 2000,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 270,
+  "name": "Uma Farkas",
+  "birth_year": 2015,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 271,
+  "name": "Lena Marlowe",
+  "birth_year": 1968,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 272,
+  "name": "Lena Marlowe",
+  "birth_year": 1997,
+  "status": "suspended",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 273,
+  "name": "Lena Novak",
+  "birth_year": 2007,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 274,
+  "name": "Gus Jansen",
+  "birth_year": 2006,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 275,
+  "name": "Otto Novak",
+  "birth_year": 1970,
+  "status": "active",
+  "fines_eur": 1.5
+ },
+ {
+  "member_id": 276,
+  "name": "Noor Brandt",
+  "birth_year": 1961,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 277,
+  "name": "Pia Nagy",
+  "birth_year": 1992,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 278,
+  "name": "Max Lindqvist",
+  "birth_year": 1950,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 279,
+  "name": "Noor Kovacs",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 280,
+  "name": "Gus Kovacs",
+  "birth_year": 1998,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 281,
+  "name": "Ben Moravec",
+  "birth_year": 1988,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 282,
+  "name": "Pia Duran",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 283,
+  "name": "Eli Delgado",
+  "birth_year": 1988,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 284,
+  "name": "Pia Okafor",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 285,
+  "name": "Hana Varga",
+  "birth_year": 1965,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 286,
+  "name": "Cal Farkas",
+  "birth_year": 1996,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 287,
+  "name": "Noor Nagy",
+  "birth_year": 1983,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 288,
+  "name": "Dana Ibsen",
+  "birth_year": 2015,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 289,
+  "name": "Ivo Kovacs",
+  "birth_year": 1957,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 290,
+  "name": "Eli Ibsen",
+  "birth_year": 1970,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 291,
+  "name": "Noor Gallo",
+  "birth_year": 1995,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 292,
+  "name": "Ravi Gallo",
+  "birth_year": 1959,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 293,
+  "name": "Fay Keller",
+  "birth_year": 1962,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 294,
+  "name": "Sam Fischer",
+  "birth_year": 1990,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 295,
+  "name": "Jess Delgado",
+  "birth_year": 1996,
+  "status": "active",
+  "fines_eur": 7.0
+ },
+ {
+  "member_id": 296,
+  "name": "Lena Moravec",
+  "birth_year": 1968,
+  "status": "suspended",
+  "fines_eur": 3.5
+ },
+ {
+  "member_id": 297,
+  "name": "Jess Ibsen",
+  "birth_year": 2012,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 298,
+  "name": "Dana Haddad",
+  "birth_year": 1969,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 299,
+  "name": "Sam Farkas",
+  "birth_year": 1964,
+  "status": "active",
+  "fines_eur": 0
+ },
+ {
+  "member_id": 300,
+  "name": "Dana Moravec",
+  "birth_year": 1966,
+  "status": "active",
+  "fines_eur": 2.0
+ },
+ {
+  "member_id": 9001,
+  "name": "Fixture Adult",
+  "birth_year": 1991,
+  "status": "active",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9002,
+  "name": "Fixture Child",
+  "birth_year": 2016,
+  "status": "active",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9003,
+  "name": "Fixture Suspended",
+  "birth_year": 1986,
+  "status": "suspended",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9004,
+  "name": "Fixture Fined",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 12.5
+ },
+ {
+  "member_id": 9005,
+  "name": "Fixture FineLimit",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 5.0
+ },
+ {
+  "member_id": 9006,
+  "name": "Fixture MaxLoans",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9007,
+  "name": "Fixture TwoLoans",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9008,
+  "name": "Fixture HasBook",
+  "birth_year": 1986,
+  "status": "active",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9009,
+  "name": "Fixture Age18",
+  "birth_year": 2008,
+  "status": "active",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9010,
+  "name": "Fixture Age17",
+  "birth_year": 2009,
+  "status": "active",
+  "fines_eur": 0.0
+ },
+ {
+  "member_id": 9011,
+  "name": "Fixture SuspFined",
+  "birth_year": 1986,
+  "status": "suspended",
+  "fines_eur": 9.0
+ },
+ {
+  "member_id": 9012,
+  "name": "Fixture Racer",
+  "birth_year": 1996,
+  "status": "active",
+  "fines_eur": 0.0
+ }
+]
